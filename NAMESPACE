@@ -2,3 +2,4 @@
 
 export(finalise_plot)
 export(petermac_style)
+import(ggplot2)

@@ -37,12 +37,13 @@ create_footer <- function (source_name) {
 
 #' @keywords finalise_plot
 #' @examples
+#' \dontrun{
 #' finalise_plot(plot_name = myplot,
 #' source = "The source for my data",
 #' save_filepath = "filename_that_my_plot_should_be_saved_to-nc.png",
 #' width_pixels = 640,
-#' height_pixels = 450
-#' )
+#' height_pixels = 450)
+#'}
 #'
 #' @export
 finalise_plot <- function(plot_name,

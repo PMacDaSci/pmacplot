@@ -10,9 +10,11 @@ petermac_style()
 This function allows you to add the Peter Mac theme to your ggplotgraphics.
 }
 \examples{
+\dontrun{
 line <- ggplot(line_df, aes(x = year, y = lifeExp)) +
 geom_line(colour = "#007f7f", size = 1) +
 geom_hline(yintercept = 0, size = 1, colour="#333333") +
 petermac_style()
+}
 }
 \keyword{petermac_style}
