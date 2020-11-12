@@ -1,16 +1,11 @@
-Package: bbplot
-Title: MAKING GGPLOT GRAPHICS IN BBC NEWS STYLE
-Version: 0.2
+Package: pmacplot
+Title: MAKING GGPLOT GRAPHICS IN PETER MAC STYLE
+Version: 0.1
 Authors@R: c(
-    person("Nassos", "Stylianou", , "nassos.stylianou@bbc.co.uk", c("aut", "cre")),
-    person("Clara", "Guibourg", "clara.guibourg@bbc.co.uk", c("aut", "cre")),
-    person("Will", "Dahlgreen", "william.dahlgreen@bbc.co.uk", role = "aut"),
-    person("Robert", "Cuffe", "robert.cuffe@bbc.co.uk", role = "aut"),
-    person("Tom", "Calver", , role = "aut"),
-    person("Ransome", "Mpini", , role = "aut")
+    person("Maria", "Doyle", , "maria.doyle@petermac.org", c("aut", "cre"))
     )
 Description: Helps create and export ggplot2 charts in the style used by 
-    the BBC News data team thanks to two useful functions, one for styling and another for exporting ggplot graphics
+    the Peter Mac data team thanks to two useful functions, one for styling and another for exporting ggplot graphics. Based on the BBC News bbplot package.
 Depends: R (>= 3.3.0)
 Imports:
     ggplot2,
