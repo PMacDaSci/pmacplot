@@ -1,4 +1,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\_pkgdown.yml$
-^\.github
+^_pkgdown.yml$
+^\.github$
+^\.git$
+^README_cache$
+^README_files$
+^README.Rmd
+^vignettes/introduction_cache$
