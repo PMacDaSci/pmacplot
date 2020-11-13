@@ -11,8 +11,6 @@ vignette: >
   %\usepackage[UTF-8]{inputenc}
 ---
 
-This repo contains the functions of the `pmacplot` package, which once installed locally, provides helpful functions for creating and exporting  graphics made in ggplot in the style used by the Peter Mac data team. It is based on the BBC news bbplot package.
-
 ```{r include=FALSE}
 example_plots <- "../man/figures/bbplot_example_plots.png"
 # The chunk below uses Rmd in man/fragments to avoid duplication, as the content is shared with the vignette and README. As suggested here: https://www.garrickadenbuie.com/blog/dry-vignette-and-readme/
