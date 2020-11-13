@@ -12,6 +12,18 @@ installed locally, provides helpful functions for creating and exporting
 graphics made in ggplot in the style used by the Peter Mac data team. It
 is based on the BBC news bbplot package.
 
+# We need your suggestions!
+
+Please help us identify what would be good to add to the package in this
+[Google
+doc](https://docs.google.com/document/d/1y3F0Xp91w3SCCALdUrqi8OswdMF8-Ek5_RrYK-9PDbI/edit)
+
+## Example plots
+
+The figure below shows examples of plots created using the BBC news
+package (that this package is based on). We’ll replace with examples
+using this package when we have some.
+
 ![Example of graphics created using the pmacplot
 package](man/figures/bbplot_example_plots.png)
 
@@ -34,7 +46,8 @@ The package has two functions for plots: `petermac_style()` and
 `finalise_plot()`.
 
 Detailed examples on how to use the functions included within the
-`pmacplot` package to produce graphics are included in the [R
+`pmacplot` package to produce graphics will be included at this website.
+Examples for the BBC News versions can be found in the [R
 cookbook](https://bbc.github.io/rcookbook/), as well as a more general
 reference manual for working with `ggplot2`.
 
