@@ -11,7 +11,7 @@ vignette: >
   %\VignetteIndexEntry{Stream Graph}
   %\usepackage[UTF-8]{inputenc}
 ---
-Level: Advanced
+*Level: Advanced*
 
 This shows how to create a stream graph using base R, such as the one in [Figure 1B](https://www.sciencedirect.com/science/article/pii/S1556086420300277#fig1) [@Solomon2020]. The graph shows the allele frequencies of a founder fusion mutation and G810 substitution mutations that emerged over time.
 
@@ -258,24 +258,27 @@ G810S <- data.frame(date=dates,vaf=c(0,0,0,0.3,2.5,0),var="G810S")
 
 #lets make this one big data frame, so we have an easier time
 y <- data.table(g810r=G810R$vaf,g810s=G810S$vaf,g810c=G810C$vaf,fusion=fusion$vaf,g810v=G810V$vaf,date=dates)
-
-#take a look
-head(y)
-```
-
-
-## Plot Stream graph
-```{r message=FALSE, warning=FALSE}
-plotStreamGraph(y)
 ```
 
 ## Example data
+
 ```{r data, eval = FALSE}
+```
+
+```{r}
+#take a look
+head(y)
 ```
 
 ## Stream graph function
 
 ```{r definition, eval = FALSE}
+```
+
+## Plot Stream graph
+
+```{r message=FALSE, warning=FALSE}
+plotStreamGraph(y)
 ```
 
 ## References

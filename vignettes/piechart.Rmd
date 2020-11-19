@@ -11,21 +11,28 @@ vignette: >
   %\VignetteIndexEntry{Pie Chart}
   %\usepackage[UTF-8]{inputenc}
 ---
-Level: Intermediate
+*Level: Intermediate*
 
 This shows how to create a pie chart using base R, such as the ones in [Figure 1D](https://www.sciencedirect.com/science/article/pii/S1556086420300277#fig1) [@Solomon2020]. The chart shows the allele frequencies of mutations in a tumour sample.
 
-```{r, pie, echo = FALSE}
-# setup the colouring
+```{r, colours, echo = FALSE}
 variantColors <- RColorBrewer::brewer.pal(4, "Set1")
 names(variantColors) <- c("r", "c", "s", "v")
+```
 
-# plot one pie
+```{r, pie, echo = FALSE}
 par(mar = c(0, 0, 0, 10))
 pie(c(0.80, 0.11, 0.09), col = c("lightgrey", variantColors[c("c", "s")]), border = "white", labels = "", init.angle = 90)
 rng <- par("usr")
 legend(rng[2] - 0.1, 0, yjust = 0.5, legend = c("80%", "11%", "9%"), fill = c("lightgrey", variantColors[c("c", "s")]), bty = "n", border = "white", cex = 2, xpd = TRUE)
 ```
+
+## Set up the colouring
+
+```{r colours, eval = FALSE}
+```
+
+## Plot one pie
 
 ```{r pie, eval = FALSE}
 ```
