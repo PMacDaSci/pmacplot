@@ -1,6 +1,6 @@
 Package: pmacplot
 Title: MAKING GGPLOT GRAPHICS IN PETER MAC STYLE
-Version: 0.1
+Version: 0.1.1
 Authors@R: c(
     person("Maria", "Doyle", , "maria.doyle@petermac.org", c("aut", "cre"))
     )
