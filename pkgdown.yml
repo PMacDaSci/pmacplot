@@ -3,5 +3,6 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   introduction: introduction.html
-last_built: 2020-11-13T06:52Z
+  streamgraph: streamgraph.html
+last_built: 2020-11-19T08:08Z
 
