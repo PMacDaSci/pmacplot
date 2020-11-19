@@ -281,8 +281,7 @@ head(y)
 
 ## Plot Stream graph
 
-```{r streamgraph, eval=FALSE}
-plotStreamGraph(y)
+```{r streamgraph, eval = FALSE}
 ```
 
 ## References
