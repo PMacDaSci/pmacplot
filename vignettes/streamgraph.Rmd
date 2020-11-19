@@ -9,7 +9,7 @@ output:
     toc_float: true
 vignette: >
   %\VignetteEngine{knitr::knitr}
-  %\VignetteIndexEntry{PMACPLOT}
+  %\VignetteIndexEntry{Stream Graph}
   %\usepackage[UTF-8]{inputenc}
 ---
 
