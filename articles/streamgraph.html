@@ -91,26 +91,12 @@
 
     
     
-<p>Level: Advanced</p>
+<p><em>Level: Advanced</em></p>
 <p>This shows how to create a stream graph using base R, such as the one in <a href="https://www.sciencedirect.com/science/article/pii/S1556086420300277#fig1">Figure 1B</a> <span class="citation">(Solomon et al. 2020)</span>. The graph shows the allele frequencies of a founder fusion mutation and G810 substitution mutations that emerged over time.</p>
-<pre><code>##    g810r g810s g810c fusion g810v       date
-## 1:   0.0   0.0   0.0   22.1   0.0 2018-03-09
-## 2:   0.0   0.0   0.0    3.8   0.0 2018-03-29
-## 3:   0.0   0.0   0.0    4.6   0.0 2018-05-10
-## 4:   0.0   0.3   0.0    2.4   0.0 2018-06-18
-## 5:   0.0   2.5   2.1    5.0   0.3 2018-07-17
-## 6:   6.8   0.0   4.8   25.4   0.2 2018-09-05</code></pre>
-<div id="plot-stream-graph" class="section level2">
-<h2 class="hasAnchor">
-<a href="#plot-stream-graph" class="anchor"></a>Plot Stream graph</h2>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">plotStreamGraph</span><span class="op">(</span><span class="va">y</span><span class="op">)</span></code></pre></div>
-<p><img src="streamgraph_files/figure-html/unnamed-chunk-1-1.png" width="700"></p>
-</div>
 <div id="example-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example-data" class="anchor"></a>Example data</h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://r-datatable.com">data.table</a></span><span class="op">)</span>
 <span class="va">dates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"2018-3-9"</span>,<span class="st">"2018-3-29"</span>,<span class="st">"2018-5-10"</span>,<span class="st">"2018-6-18"</span>,<span class="st">"2018-7-17"</span>,<span class="st">"2018-9-5"</span><span class="op">)</span><span class="op">)</span>
 <span class="va">fusion</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>date<span class="op">=</span><span class="va">dates</span>,vaf<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">22.1</span>,<span class="fl">3.8</span>,<span class="fl">4.6</span>,<span class="fl">2.4</span>,<span class="fl">5</span>,<span class="fl">25.4</span><span class="op">)</span>,var<span class="op">=</span><span class="st">"fusion"</span><span class="op">)</span>
@@ -120,10 +106,17 @@
 <span class="va">G810S</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>date<span class="op">=</span><span class="va">dates</span>,vaf<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0.3</span>,<span class="fl">2.5</span>,<span class="fl">0</span><span class="op">)</span>,var<span class="op">=</span><span class="st">"G810S"</span><span class="op">)</span>
 
 <span class="co">#lets make this one big data frame, so we have an easier time</span>
-<span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://Rdatatable.gitlab.io/data.table/reference/data.table.html">data.table</a></span><span class="op">(</span>g810r<span class="op">=</span><span class="va">G810R</span><span class="op">$</span><span class="va">vaf</span>,g810s<span class="op">=</span><span class="va">G810S</span><span class="op">$</span><span class="va">vaf</span>,g810c<span class="op">=</span><span class="va">G810C</span><span class="op">$</span><span class="va">vaf</span>,fusion<span class="op">=</span><span class="va">fusion</span><span class="op">$</span><span class="va">vaf</span>,g810v<span class="op">=</span><span class="va">G810V</span><span class="op">$</span><span class="va">vaf</span>,date<span class="op">=</span><span class="va">dates</span><span class="op">)</span>
-
-<span class="co">#take a look</span>
+<span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://Rdatatable.gitlab.io/data.table/reference/data.table.html">data.table</a></span><span class="op">(</span>g810r<span class="op">=</span><span class="va">G810R</span><span class="op">$</span><span class="va">vaf</span>,g810s<span class="op">=</span><span class="va">G810S</span><span class="op">$</span><span class="va">vaf</span>,g810c<span class="op">=</span><span class="va">G810C</span><span class="op">$</span><span class="va">vaf</span>,fusion<span class="op">=</span><span class="va">fusion</span><span class="op">$</span><span class="va">vaf</span>,g810v<span class="op">=</span><span class="va">G810V</span><span class="op">$</span><span class="va">vaf</span>,date<span class="op">=</span><span class="va">dates</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">#take a look</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">y</span><span class="op">)</span></code></pre></div>
+<pre><code>##    g810r g810s g810c fusion g810v       date
+## 1:   0.0   0.0   0.0   22.1   0.0 2018-03-09
+## 2:   0.0   0.0   0.0    3.8   0.0 2018-03-29
+## 3:   0.0   0.0   0.0    4.6   0.0 2018-05-10
+## 4:   0.0   0.3   0.0    2.4   0.0 2018-06-18
+## 5:   0.0   2.5   2.1    5.0   0.3 2018-07-17
+## 6:   6.8   0.0   4.8   25.4   0.2 2018-09-05</code></pre>
 </div>
 <div id="stream-graph-function" class="section level2">
 <h2 class="hasAnchor">
@@ -356,6 +349,13 @@
   <span class="op">}</span>
 
 <span class="op">}</span></code></pre></div>
+</div>
+<div id="plot-stream-graph" class="section level2">
+<h2 class="hasAnchor">
+<a href="#plot-stream-graph" class="anchor"></a>Plot Stream graph</h2>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">plotStreamGraph</span><span class="op">(</span><span class="va">y</span><span class="op">)</span></code></pre></div>
+<p><img src="streamgraph_files/figure-html/unnamed-chunk-2-1.png" width="700"></p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2 class="hasAnchor">
