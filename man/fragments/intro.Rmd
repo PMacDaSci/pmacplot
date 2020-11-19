@@ -1,5 +1,5 @@
 
-This repo contains the functions of the `pmacplot` package, which once installed locally, provides helpful functions for creating and exporting  graphics made in ggplot in the style used by Peter Mac researchers (well that's the aim, it's just beginning Nov 2020). It is based on the BBC news bbplot package.
+This repo contains the functions of the `pmacplot` package, which once installed locally, provides helpful functions for creating and exporting graphics made in the style used by Peter Mac researchers (well that's the aim, it's just beginning Nov 2020). It is based on the BBC news bbplot package.
 
 # We need your help!
 
@@ -8,7 +8,7 @@ We could use the [bbc style](https://github.com/bbc/bbplot/blob/master/R/bbc_sty
 Please let us know what you think and/or help us identify what would be good to add to the package in this [Google doc](https://docs.google.com/document/d/1y3F0Xp91w3SCCALdUrqi8OswdMF8-Ek5_RrYK-9PDbI/edit) 
 
 ## Example plots
-The figure below shows examples of plots created using the BBC news package (that this package is based on). We'll replace with examples using this package when we have some.
+The figure below shows examples of plots created using the BBC news package (that this package is based on). We'll replace with examples using this package when we have some. We've started adding some example plots from Peter Mac researchers for inspiration. You can find them under **Articles** in the menu at the top of this page and reproduce with the code shown.
 
 ![Example of graphics created using the pmacplot package](`r example_plots`)
 

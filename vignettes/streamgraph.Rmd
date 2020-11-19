@@ -3,10 +3,17 @@ title: "Stream Graph"
 author: "Sebastian Hollizeck, Dawson Labs"
 date: "`r Sys.Date()`"
 package: pmacplot
+bibliography: references.bib
 output:
-  html_document:
-    code_folding: hide
+  html_vignette:
+    toc_float: true
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{PMACPLOT}
+  %\usepackage[UTF-8]{inputenc}
 ---
+
+This shows how to create a stream graph using base R, such as the one in [Figure 1B Solomon et al, 2020](https://www.sciencedirect.com/science/article/pii/S1556086420300277#fig1). The graph shows the allele frequencies of a founder fusion mutation and G810 substitution mutations that emerged over time.
 
 ```{r definition, echo = FALSE}
 plotStreamGraph <- function(data=stop("No data, NO PLOT, also no cape!"), smoothed=TRUE, start=TRUE, dates="date", colors=NULL, span=0.6){

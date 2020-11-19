@@ -4,8 +4,8 @@ Version: 0.1.1
 Authors@R: c(
     person("Maria", "Doyle", , "maria.doyle@petermac.org", c("aut", "cre"))
     )
-Description: Helps create and export ggplot2 charts in the style used by 
-    the Peter Mac data team thanks to two useful functions, one for styling and another for exporting ggplot graphics. Based on the BBC News bbplot package.
+Description: Helps create and export charts in the style used by 
+    the Peter Mac data team. Based on the BBC News bbplot package.
 Depends: 
     R (>= 3.3.0),
     ggplot2
