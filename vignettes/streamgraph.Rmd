@@ -2,8 +2,7 @@
 title: "Stream Graph"
 author: "Sebastian Hollizeck, Dawson Labs"
 date: "`r Sys.Date()`"
-package: pmacplot
-bibliography: references.bib
+bibliography: "`r file.path(system.file(package='pmacplot', 'vignettes'), 'references.bib')`"
 output:
   html_vignette:
     toc_float: true
