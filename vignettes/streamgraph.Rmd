@@ -260,6 +260,10 @@ G810S <- data.frame(date=dates,vaf=c(0,0,0,0.3,2.5,0),var="G810S")
 y <- data.table(g810r=G810R$vaf,g810s=G810S$vaf,g810c=G810C$vaf,fusion=fusion$vaf,g810v=G810V$vaf,date=dates)
 ```
 
+```{r streamgraph, message=FALSE, warning=FALSE, echo=FALSE}
+plotStreamGraph(y)
+```
+
 ## Example data
 
 ```{r data, eval = FALSE}
@@ -277,7 +281,7 @@ head(y)
 
 ## Plot Stream graph
 
-```{r message=FALSE, warning=FALSE}
+```{r streamgraph, eval=FALSE}
 plotStreamGraph(y)
 ```
 
