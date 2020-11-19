@@ -11,6 +11,7 @@ vignette: >
   %\VignetteIndexEntry{Stream Graph}
   %\usepackage[UTF-8]{inputenc}
 ---
+Level: Advanced
 
 This shows how to create a stream graph using base R, such as the one in [Figure 1B](https://www.sciencedirect.com/science/article/pii/S1556086420300277#fig1) [@Solomon2020]. The graph shows the allele frequencies of a founder fusion mutation and G810 substitution mutations that emerged over time.
 
